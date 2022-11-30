@@ -26,7 +26,7 @@ jobs:
         with:
           submodules: 'true'
       - name: Install libfuse2
-        run:
+        run: |
           sudo add-apt-repository universe
           sudo apt-get install -y libfuse2
 #not great, but let's also set up java so we can run sdkmanager. probably a way to avoid this.
