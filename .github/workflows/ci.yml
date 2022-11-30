@@ -36,7 +36,7 @@ jobs:
 #need 2fa to not error out I think
       - name: Activate Unity
         continue-on-error: true 
-        uses: kuler90/activate-unity@v1
+        uses: kuler90/activate-unity@v1.1.3
         with:
           unity-username: ${{ secrets.UNITY_USERNAME }}
           unity-password: ${{ secrets.UNITY_PASSWORD }}
