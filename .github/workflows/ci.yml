@@ -28,7 +28,7 @@ jobs:
       #https://github.com/marketplace/actions/setup-unity
       #possible modules on linux - android,ios,webgl,linux-il2cpp,mac-mono,windows-mono 
       - name: Setup Unity
-        uses: kuler90/setup-unity@v1
+        uses: kuler90/setup-unity@v1.1.0
         with:
           unity-version: ${{ matrix.unity-version-matrix }}
           unity-modules: android
