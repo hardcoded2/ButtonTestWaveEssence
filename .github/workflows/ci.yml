@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: 'true'
 #not great, but let's also set up java so we can run sdkmanager. probably a way to avoid this.
@@ -69,7 +69,7 @@ jobs:
       #https://docs.unity3d.com/Manual/EditorCommandLineArguments.html
 
       - name: Build Unity
-        uses: kuler90/build-unity@v1
+        uses: kuler90/build-unity@v1.0.4
         continue-on-error: true 
         with:
           build-target: Android
